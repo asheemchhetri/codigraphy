@@ -12,7 +12,8 @@
 <dl>
 <dt>Project Objective</dt>
 
-<dd>To design a tutorial website to help a user to learn following languages:</dd>
+<dd>To design a **responsive** tutorial website to help a user to learn following languages:</dd>
+
 </dl>
 ###### Git Hub
 ###### Bash
@@ -20,6 +21,8 @@
 ###### Python
 Other languages will be added in timely manner.
 <dl>
+
+<dd>Responsive: By responsive I mean that the website is mobile friendly, but then to learn any language a PC is always a better choice.</dd>
 
 <dt>Design Objective</dt>
 <dd> The aim of the project is to make it easy for new programmers to pickup any language quickly. To do so, the following ideas are planned to be implemented.</dd>
@@ -55,4 +58,4 @@ So far I have used following:
   4. Bootstrap
 
 
-**Copyright 2016 Asheem Chhetri**
+**Copyright :copyright: 2016 Asheem Chhetri**
