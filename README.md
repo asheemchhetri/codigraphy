@@ -12,7 +12,7 @@
 <dl>
 <dt>Project Objective</dt>
 
-<dd>To design a **responsive** tutorial website to help a user to learn following languages:</dd>
+<dd>To design a responsive tutorial website to help a user to learn following languages:</dd>
 
 </dl>
 ###### Git Hub
@@ -22,7 +22,7 @@
 Other languages will be added in timely manner.
 <dl>
 
-<dd>Responsive: By responsive I mean that the website is mobile friendly, but then to learn any language a PC is always a better choice.</dd>
+Responsive: By responsive I mean that the website is mobile friendly, but then to learn any language a PC is always a better choice.
 
 <dt>Design Objective</dt>
 <dd> The aim of the project is to make it easy for new programmers to pickup any language quickly. To do so, the following ideas are planned to be implemented.</dd>
