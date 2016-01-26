@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Bootstrap tester</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"><!--Bootstrap-->
+  <link rel="stylesheet" href="../css/test.css">
+  <link rel="stylesheet" href="../pictonic/css/pictonic.css">
+  <link rel="stylesheet" type="text/css" href="./font-mfizz.css"><!--Font Mfizz-->
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'><!--Google Font API-->
+
+  <!--======================================
+  Modal effect
+  ==========================================-->
+  <link rel="stylesheet" type="text/css" href="../modal/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../modal/css/component.css" />
+  <script src="../modal/js/modernizr.custom.js"></script>
+
+  <script type="text/javascript">
+			window.onload = function()
+			{
+				// document. getElementById("height").innerHTML = "Screen size height: "+screen.height;
+				// document. getElementById("width").innerHTML = "Screen size width: "+screen.width;
+				// document.getElementById("image").style.height = screen.height+"px";
+				// alert("Width X Height: "+screen.width+"px"+screen.height+"px");
+			}
+	</script>
+
+</head>
+
+<body>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--======================================
+  Modal setup for C
+  ==========================================-->
+		<div class="md-modal md-effect-8" id="modal-c">
+
+			<div class="md-content">
+
+        <div class="modal-header">
+					<h3 id="title"><span class="icon-prog-c" ></span></h3>
+				</div><!--end modal-header-->
+
+					<p class="description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+          <div class="modal-footer">
+						<div class="btn text-center" id="btnClose">
+							<button class="btn btn-primary btn-sm md-close">Close Me!</button>
+						</div><!--end btnClose-->
+						<div class="btn text-center" id="btnMore">
+							<a href="https://www.google.com" target="_blank" id="modalButton"> <button  class="btn btn-success"><strong>S.T.A.R.T</strong></button> </a>
+						</div><!--end btnMore-->
+					</div><!--end moadl-footer-->
+
+			</div><!--end md-content-->
+		</div><!--end modal setup for C-->
+
+    <!--======================================
+    Modal setup for Bash
+    ==========================================-->
+    <div class="md-modal md-effect-8" id="modal-bash">
+
+			<div class="md-content">
+
+        <div class="modal-header">
+					<h3 id="title"><span class="icon-prog-bash02" ></span></h3>
+				</div><!--end modal-header-->
+
+					<p class="description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+          <div class="modal-footer">
+						<div class="btn text-center" id="btnClose">
+							<button class="btn btn-primary btn-sm md-close">Close Me!</button>
+						</div><!--end btnClose-->
+						<div class="btn text-center" id="btnMore">
+							<a href="https://www.google.com" target="_blank" id="modalButton"> <button  class="btn btn-success">S.T.A.R.T</button> </a>
+						</div><!--end btnMore-->
+					</div><!--end moadl-footer-->
+
+			</div><!--end md-content-->
+		</div><!--end modal setup for C-->
+
+    <!--======================================
+    Modal setup for GitHub
+    ==========================================-->
+    <div class="md-modal md-effect-8" id="modal-git">
+
+      <div class="md-content">
+
+        <div class="modal-header">
+          <h3 id="title"><span class="icon-vc-git" ></span></h3>
+        </div><!--end modal-header-->
+
+          <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="modal-footer">
+            <div class="btn text-center" id="btnClose">
+              <button class="btn btn-primary btn-sm md-close">Close Me!</button>
+            </div><!--end btnClose-->
+            <div class="btn text-center" id="btnMore">
+              <a href="https://www.google.com" target="_blank" id="modalButton"> <button  class="btn btn-success">S.T.A.R.T</button> </a>
+            </div><!--end btnMore-->
+          </div><!--end moadl-footer-->
+
+      </div><!--end md-content-->
+    </div><!--end modal setup for GitHub-->
+
+    <!--======================================
+    Modal setup for Python
+    ==========================================-->
+    <div class="md-modal md-effect-8" id="modal-python">
+
+      <div class="md-content">
+
+        <div class="modal-header">
+          <h3 id="title"><span class="icon-prog-python" ></span></h3>
+        </div><!--end modal-header-->
+
+          <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="modal-footer">
+            <div class="btn text-center" id="btnClose">
+              <button class="btn btn-primary btn-sm md-close">Close Me!</button>
+            </div><!--end btnClose-->
+            <div class="btn text-center" id="btnMore">
+              <a href="https://www.google.com" target="_blank" id="modalButton"> <button  class="btn btn-success">S.T.A.R.T</button> </a>
+            </div><!--end btnMore-->
+          </div><!--end moadl-footer-->
+
+      </div><!--end md-content-->
+    </div><!--end modal setup for Python-->
+
+		<div class="md-overlay"></div><!-- the overlay element -->
+
+  <!--======================================
+  >>>>>>>>>>>>>Mobile view setup<<<<<<<<<<<<
+  ==========================================-->
+<div class="container img-responsive visible-xs" id="image">
+
+  <div class="row" id="features">
+
+    <div class="col-sm-12 mobile">
+      <h3 id="mobileHeader">Learn coding</h3>
+    </div>
+    <!--======================================
+    C class
+    ==========================================-->
+      <div class="col-sm-3 feature">
+        <div class="panel mainPanel md-trigger panelButton" data-modal="modal-c">
+          <span class="icon-prog-c" id="col1"></span>
+        </div><!--end panel-->
+      </div><!--end col-sm-3-->
+
+      <!--======================================
+      Bash class
+      ==========================================-->
+      <div class="col-sm-3 feature">
+        <div class="panel mainPanel md-trigger panelButton" data-modal="modal-bash">
+          <span class="icon-prog-bash02" id="col1"></span>
+        </div><!--end panel-->
+      </div><!--end col-sm-3-->
+
+      <!--======================================
+      Github class
+      ==========================================-->
+      <div class="col-sm-3 feature">
+        <div class="panel mainPanel md-trigger panelButton" data-modal="modal-git">
+          <span class="icon-vc-git" id="col1"></span>
+        </div><!--end panel-->
+      </div><!--end col-sm-3-->
+
+      <!--======================================
+      Python class
+      ==========================================-->
+
+      <div class="col-sm-3 feature">
+        <div class="panel mainPanel md-trigger panelButton" data-modal="modal-python">
+          <span class="icon-prog-python" id="col1"></span>
+        </div><!--end panel-->
+      </div><!--end col-sm-3-->
+
+    </div><!--end features-->
+
+  </div><!--end container-->
+
+<!--======================================
+normal view setup
+==========================================-->
+<div class="container img-responsive visible-lg visible-md" id="image">
+
+  <div class="row" id="features">
+    <h1 class="normalHeader">Learn <small>Coding</small></h1>
+
+    <!--======================================
+    C class
+    ==========================================-->
+    <div class="col-md-4 feature">
+      <div class="panel mainPanel">
+        <div class="panel-heading">
+          <h3 class="panel panel-title panel-warning panelHeader">Learn C</h3>
+        </div>
+        <span class="icon-prog-c" id="col1"></span>
+        <p class="panelContent">Learn about the concept of C programming language and their applications.</p>
+
+      </div><!--end panel-->
+      <button class="btn btn-warning btn-block md-trigger panelButton" data-modal="modal-c">Learn More</button>
+    </div><!--end col-sm-4-->
+
+    <!--======================================
+    Bash class
+    ==========================================-->
+    <div class="col-md-4 feature">
+      <div class="panel mainPanel">
+        <div class="panel-heading">
+          <h3 class="panel panel-title panel-danger panelHeader">Learn Bash</h3>
+        </div>
+        <span class="icon-prog-bash02" id="col1"></span>
+        <p class="panelContent">Learn how to automate applications using Bash.</p>
+
+      </div><!--end panel-->
+      <button class="btn btn-danger btn-block md-trigger panelButton" data-modal="modal-bash">Learn More</button>
+    </div><!--end col-sm-4-->
+
+    <!--======================================
+    GitHub class
+    ==========================================-->
+    <div class="col-md-4 feature">
+      <div class="panel mainPanel">
+        <div class="panel-heading">
+          <h3 class="panel panel-title panel-success panelHeader">Learn Github</h3>
+        </div>
+        <span class="icon-vc-git" id="col1"></span>
+        <p class="panelContent">Learn how to make your work more collaborative using GitHub repository.</p>
+
+      </div><!--end panel-->
+      <button class="btn btn-success btn-block md-trigger panelButton" data-modal="modal-git">Learn More</button>
+    </div><!--end col-sm-4-->
+
+  </div><!--end features-->
+
+  <div class="row" id="features">
+
+    <!--======================================
+    Left empty
+    ==========================================-->
+    <div class="col-sm-4 feature">
+      <!--Intentionally left blank to center the middle div content, replace it with new content once they are available-->
+    </div><!--end col-sm-4-->
+
+    <!--======================================
+    Python class
+    ==========================================-->
+    <div class="col-md-4 feature2">
+      <div class="panel mainPanel">
+        <div class="panel-heading">
+          <h3 class="panel panel-title panel-danger panelHeader">Learn Python</h3>
+        </div>
+        <span class="icon-prog-python" id="col1"></span>
+        <p class="panelContent">Learn about the concept of Python programming language and their applications.</p>
+      </div><!--end panel-->
+      <button class="btn btn-danger btn-block md-trigger panelButton" data-modal="modal-python">Learn More</button>
+    </div><!--end col-sm-4-->
+
+    <!--======================================
+    Left empty
+    ==========================================-->
+    <div class="col-sm-4 feature">
+      <!--Intentionally left blank to center the middle div content, replace it with new content once they are available-->
+    </div><!--end col-sm-4-->
+
+  </div><!--end features-->
+
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript for bootstrap -->
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script>
+    $("#imgSource").css("height",$(window).height());
+  </script> -->
+
+  <!--MODAL related-->
+  <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="../modal/js/classie.js"></script>
+		<script src="../modal/js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '../modal/js/';
+		</script>
+		<script src="../modal/js/cssParser.js"></script>
+		<script src="../modal/js/css-filters-polyfill.js"></script>
+</body>
+
+</html>

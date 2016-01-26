@@ -1,0 +1,106 @@
+#col1{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 100px;
+  color: #352927;
+}
+
+#features{
+  text-align: center;
+}
+#features span{
+  margin 0 0 20px;
+}
+.feature{
+  margin-top: 360px;
+}
+.feature2{
+  margin-top: 200px;
+}
+.panelHeader{
+  font-size: 35px;
+}
+.mainPanel{
+  opacity: 0.8;
+}
+.panelButton{
+  border:0;
+}
+#normalHeader, h1 > small{
+  font-size: 50px;
+  font-family: 'Orbitron', sans-serif;
+  color:#CAFCFE !important;
+  opacity: 0.7;
+}
+#image{
+  background-image: url("../images/vector1_1920.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+  height: 1920px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.panelButton{
+  -o-transition: color .3s ease-out, background 0.3s ease-in;
+  -ms-transition: color .3s ease-out, background 0.3s ease-in;
+  -moz-transition: color .3s ease-out, background 0.3s ease-in;
+  -webkit-transition: color .3s ease-out, background 0.3s ease-in;
+  /* ...and now for the proper property */
+  transition: color .3s ease-out, background 0.3s ease-in;;
+}
+.panelButton:hover{
+
+  background: #35363C;
+  border-style: none;
+}
+
+
+/*================================
+Media Query
+==================================*/
+@media screen and (max-width: 768px) {
+  #image{
+    background-image: url("../images/vector1_600.jpg");
+    width: 800px;
+    height:400px;
+    background-size: cover;
+  }
+  .panelHeader{
+    font-size: 20px;
+  }
+  #col1{
+    margin-top: 15px;
+    font-size: 30px;
+    color: #35617D;
+  }
+  .feature{
+    margin-top: 0px;
+    /*opacity: 0.5;*/
+  }
+  .feature2{
+    margin-top: 0px;
+  }
+  /*
+  .panelContent{
+    display: none;
+  }
+  The following way of hiding content on mobile view was used, but alternative is to remove that element completely
+  as we have different layout for different viewport using HTML.
+  */
+  .mainPanel{
+    width: 30%;
+    /*border: 2px solid green;*/
+    margin-bottom: 5px;
+    /*background-color: red;*/
+    opacity: 0.8;
+  }
+  #mobileHeader{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #c0392b;
+    opacity: 0.8;
+  }
+}

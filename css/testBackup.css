@@ -1,0 +1,119 @@
+p{
+  /*padding-top: 50px;*/
+  /*color:red;*/
+}
+/*#col{*/
+  /*text-align: center;*/
+  /*height:500px;*/
+  /*margin-top: 45px;*/
+  /*width:50%;*/
+  /*border: 2px solid red;*/
+/*}*/
+#col1{
+  /*text-align: center;*/
+  /*height:300px;*/
+  margin-top: 25px;
+  margin-bottom: 15px;
+  /*height:100px;*/
+  /*width:100%;*/
+  /*border: 2px solid red;*/
+  font-size: 100px;
+  color: #352927;
+}
+/*#col2{*/
+  /*text-align: center;*/
+  /*position: absolute;*/
+  /*height:100px;*/
+  /*top: 350px;*/
+  /*right: 0px;*/
+  /*width: 50%;*/
+  /*height:300px;*/
+  /*margin-top: 45px;
+  border: 2px solid red;
+}*/
+/*#col3{*/
+  /*text-align: center;*/
+  /*position: absolute;*/
+  /*top: 350px;*/
+  /*right: 0px;*/
+  /*height:100px;*/
+  /*width: 50%;*/
+  /*height:300px;*/
+  /*margin-top: 180px;
+  border: 2px solid red;
+}*/
+
+#features{
+  text-align: center;
+  /*border: 2px solid red;*/
+}
+#features span{
+  /*margin-top: -5px;*/
+  margin 0 0 20px;
+}
+.feature{
+  margin-top: 560px;
+  /*opacity: 0.5;*/
+}
+.feature2{
+  margin-top: 80px;
+}
+.panelHeader{
+  font-size: 40px;
+}
+#image{
+  background-image: url("../images/vector1_1920.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+  height: 1920px;
+	background-repeat:no-repeat;
+  /*overflow: hidden;*/
+	/* custom background-position */
+	background-position:50% 50%;
+	/*margin-top: -20px;*/
+	/*border: 2px solid red;*/
+}
+@media screen and (max-width: 768px) {
+  #image{
+    background-image: url("../images/vector1_600.jpg");
+    width: 800px;
+    height:400px;
+    background-size: cover;
+  }
+  .panelHeader{
+    font-size: 20px;
+  }
+  #col1{
+    margin-top: 15px;
+    /*margin-bottom: 5px;*/
+    font-size: 30px;
+    color: #35617D;
+  }
+  .feature{
+    margin-top: 0px;
+    /*opacity: 0.5;*/
+  }
+  .feature2{
+    margin-top: 0px;
+  }
+  /*
+  .panelContent{
+    display: none;
+  }
+  The following way of hiding content on mobile view was used, but alternative is to remove that element completely
+  as we have different layout for different viewport using HTML.
+  */
+  .mainPanel{
+    /*border: 2px solid red;*/
+    width: 30%;
+    opacity: 0.8;
+  }
+  #mobileHeader{
+    font-weight: bold;
+    color: #c0392b;
+    opacity: 0.8;
+  }
+}
