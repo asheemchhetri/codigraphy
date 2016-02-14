@@ -1,4 +1,4 @@
-### This file corresponds to highlight any changes, that I push to the repository.
+### This file corresponds to highlight any changes made to the core files pushed to the repository.
 
 Date | Description
 ------------ | -------------
