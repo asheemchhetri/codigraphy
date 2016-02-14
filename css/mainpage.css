@@ -252,21 +252,6 @@ a:hover {
   /*font-size: 15px;*/
   /*color:red;*/
 }
-#image {
-  background-image: url("../images/vector1_1920.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 1920px;
-  background-repeat: no-repeat;
-  /*overflow: hidden;*/
-  /* custom background-position */
-  background-position: 50% 50%;
-  /*margin-top: -20px;*/
-  /*border: 2px solid red;*/
-}
 
 /* --------------------------------------
        Main Section Style
@@ -318,12 +303,6 @@ a:hover {
   left: 30px;
   font-size: 2em;
   color:#5E2612;
-  /*-webkit-animation-duration: 3s;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-duration: 3s;
-  -moz-animation-delay: 0s;
-  -moz-animation-iteration-count: infinite;*/
 }
 #scrollDown2{
   position: relative;
@@ -331,12 +310,6 @@ a:hover {
   left: -2px;
   font-size: 2em;
   color:#5E2612;
-  /*-webkit-animation-duration: 3s;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-duration: 3s;
-  -moz-animation-delay: 0s;
-  -moz-animation-iteration-count: infinite;*/
 }
 #scrollDown3{
   position: relative;
@@ -344,12 +317,6 @@ a:hover {
   left: -34px;
   font-size: 2em;
   color:#5E2612;
-  /*-webkit-animation-duration: 3s;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-duration: 3s;
-  -moz-animation-delay: 0s;
-  -moz-animation-iteration-count: infinite;*/
 }
 .contactHeader {
   font-family: 'Orbitron', sans-serif;
@@ -366,7 +333,6 @@ a:hover {
   margin-left: 14px;
 }
 .commentTextArea {
-  /*padding-right: 0;*/
   width: 95%
 }
 #col1 {
@@ -379,7 +345,8 @@ a:hover {
   text-align: center;
 }
 #features span {
-  margin 0 0 20px;
+  /*top - (right and left) - bottom*/
+  margin: 10 5 10px;
 }
 .feature {
   margin-top: 360px;
@@ -428,8 +395,8 @@ a:hover {
 }
 
 /* --------------------------------------
-       Footer style
-       -------------------------------------- */
+  Footer style
+  -------------------------------------- */
 
 .heart, .brandHeader {
   color: #39f !important;
@@ -529,41 +496,6 @@ a:hover {
   -moz-animation-timing-function: ease;
 }
 
-/*.back-to-top{
-    background: none;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    right: 0;*/
-
-
-/*width: 70px;*/
-
-
-/*height: 70px;*/
-
-
-/*z-index: 100;
-    display: none;
-    text-decoration: none;*/
-
-
-/*color: #ffffff;*/
-
-
-/*background-color: #ff9000;*/
-
-
-/*margin:0;*/
-
-
-/*padding: 5px 5px 3px 7px;*/
-
-
-/*opacity: 0.5;
-    display: inline;
-  }*/
-
 .back-to-top {
   margin: 0;
   position: fixed;
@@ -618,8 +550,6 @@ a.mediaLink1, .mediaLink2, .mediaLink3, .mediaLink4 {
 #resumeButtonStyle {
   border-color: #0fb6ff;
   background: #0fb6ff;
-  /*border: 1px solid red;*/
-  /*padding:5px;*/
   opacity: 0.7;
   position: relative;
   ;
@@ -629,7 +559,6 @@ a.mediaLink1, .mediaLink2, .mediaLink3, .mediaLink4 {
   font-family: 'Orbitron', sans-serif;
   font-weight: bold;
   color: #1b2c33;
-  /*border: 1px solid red;*/
 }
 #resumeRedirect {
   text-decoration: none;
@@ -661,23 +590,13 @@ hr.soften {
   color: #0880c9;
 }
 .icon {
-  /*color: #605077;*/
   background: -webkit-linear-gradient(#605077, #5E2612);
   background: -o-linear-gradient(#605077, #5E2612);
-  /* For Opera 11.6 to 12.0 */
-  /*background: linear-gradient(#605077,#5E2612); For Firefox 3.6 to 15 */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -o-background-clip: text;
   -o-text-fill-color: transparent;
-  /*-webkit-mask-image: none;*/
-  /*-moz-background-clip: text;
-     -moz-text-fill-color: transparent;*/
   padding-bottom: 20px;
-  /*border: 2px solid red;*/
-  /*border-radius: 50%;*/
-  /*padding: 25px 25px 25px 25px;*/
-  /*background-color: #D0CBCA;*/
   font-size: 3em;
 }
 .iconAdjust {
@@ -717,7 +636,6 @@ hr.soften {
   padding-bottom: 20px;
 }
 #quoteSection {
-  /*border: 2px solid red;*/
   display: inline-block;
   height: 250px;
 }
@@ -748,8 +666,28 @@ hr.soften {
 
 /*================================
   >>>>>>>>>>Media Query<<<<<<<<<<<<<
+  width x height
   ==================================*/
-
+  /*This screen size corresponds to devices such as Surface Pro
+  I had to build two new classes: secondRowBox, secondRowButton
+  to handle the div content that overlaps the vector globe background*/
+@media screen and (max-width: 1280px){
+  #image {
+    background-image: url("../images/vector1_1920.jpg");
+    /*width: 100%;*/
+    height: 100%;
+    background-size: cover;
+  }
+  .secondRowBox, .secondRowButton{
+  	/*border: 2px solid green;*/
+  	position: relative;
+  	top: -10px;
+  }
+  #contentControl{
+    position: relative;
+    top: -200px;
+  }
+}
 @media screen and (max-width: 768px) {
   #image {
     background-image: url("../images/vector1_600.jpg");
@@ -774,13 +712,11 @@ hr.soften {
   }
   #quoteAuthor, #staticText {
     font-size: 0.7em;
-    /*color: red;*/
   }
   #descriptionQuote {
     font-size: 0.8em;
   }
   #quoteSection {
-    /*border: 2px solid red;*/
     display: inline-block;
     height: 320px;
   }
@@ -795,7 +731,6 @@ hr.soften {
   }
   .feature {
     margin-top: 0px;
-    /*opacity: 0.5;*/
   }
   .feature2 {
     margin-top: 0px;

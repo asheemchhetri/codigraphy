@@ -96,11 +96,11 @@ Founded 2015
 	<!--======================================
 		Website preloader screen setup
 		==========================================-->
-	<!-- <div id="loader-wrapper">
+	<div id="loader-wrapper">
 		<div id="loader"></div>
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
-	</div> -->
+	</div>
 
 	<!--======================================
 		Bootstrap content start here
@@ -170,11 +170,15 @@ Founded 2015
 		</div>
 	</div> -->
 	<div class="container" id="mainImg">
-		<div class="content">
+	<!--Commented code below corresponds to
+	vector graphic that was part of main header image
+	on top. Has been removed for now, but all dependencies are
+	still intact for future use.-->
+		<!-- <div class="content">
 			<div id="large-header" >
 				<canvas id="demo-canvas"></canvas>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 	<!--======================================
@@ -552,7 +556,7 @@ Founded 2015
 			<!--======================================
 			C class
 			==========================================-->
-			<div class="col-md-4 feature">
+			<div id="contentControl" class="col-md-4 feature">
 				<div class="panel mainPanel">
 					<div class="panel-heading">
 						<h3 class="panel panel-title panel-warning panelHeader">Learn C</h3>
@@ -569,13 +573,13 @@ Founded 2015
 			<!--======================================
 			Bash class
 			==========================================-->
-			<div class="col-md-4 feature">
+			<div id="contentControl" class="col-md-4 feature">
 				<div class="panel mainPanel">
 					<div class="panel-heading">
 						<h3 class="panel panel-title panel-danger panelHeader">Learn Bash</h3>
 					</div>
 					<span class="icon-prog-bash02" id="col1"></span>
-					<p class="panelContent">Learn how to automate applications using Bash.</p>
+					<p class="panelContent">Learn how to automate your code using Bash, and understand the shell.</p>
 
 				</div>
 				<!--end panel-->
@@ -586,7 +590,7 @@ Founded 2015
 			<!--======================================
 			GitHub class
 			==========================================-->
-			<div class="col-md-4 feature">
+			<div id="contentControl" class="col-md-4 feature">
 				<div class="panel mainPanel">
 					<div class="panel-heading">
 						<h3 class="panel panel-title panel-success panelHeader">Learn Github</h3>
@@ -616,8 +620,8 @@ Founded 2015
 			<!--======================================
 			Python class
 			==========================================-->
-			<div class="col-md-4 feature2">
-				<div class="panel mainPanel">
+			<div id="contentControl" class="col-md-4 feature2">
+				<div class="panel mainPanel secondRowBox">
 					<div class="panel-heading">
 						<h3 class="panel panel-title panel-danger panelHeader">Learn Python</h3>
 					</div>
@@ -625,7 +629,7 @@ Founded 2015
 					<p class="panelContent">Learn about the concept of Python programming language and their applications.</p>
 				</div>
 				<!--end panel-->
-				<button class="btn btn-danger btn-block md-trigger panelButton" data-modal="modal-python">Learn More</button>
+				<button class="btn btn-danger btn-block md-trigger panelButton secondRowButton" data-modal="modal-python">Learn More</button>
 			</div>
 			<!--end col-sm-4-->
 
